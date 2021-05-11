@@ -1,0 +1,4 @@
+R5T.D0059.Default - Default implementations library for AWS Secure Token Service (STS) related services.
+
+Goals
+

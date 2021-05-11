@@ -1,0 +1,4 @@
+R5T.D0059.Types - Types library for AWS Secure Token Service (STS) related services.
+
+Goals
+
