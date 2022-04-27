@@ -5,11 +5,13 @@ using Amazon.Runtime;
 using Amazon.SecurityToken;
 
 using R5T.D0057;
+using R5T.T0064;
 
 
 namespace R5T.D0059
 {
-    public class AmazonSecurityTokenServiceProvider : IAmazonSecurityTokenServiceProvider
+    [ServiceImplementationMarker]
+    public class AmazonSecurityTokenServiceProvider : IAmazonSecurityTokenServiceProvider, IServiceImplementation
     {
         private AWSCredentials AWSCredentials { get; }
         private IRegionEndpointProvider RegionEndpointProvider { get; }

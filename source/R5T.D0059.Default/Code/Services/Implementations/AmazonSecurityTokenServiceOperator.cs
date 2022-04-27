@@ -4,10 +4,13 @@ using System.Threading.Tasks;
 using Amazon.SecurityToken;
 using Amazon.SecurityToken.Model;
 
+using R5T.T0064;
+
 
 namespace R5T.D0059
 {
-    public class AmazonSecurityTokenServiceOperator : IAmazonSecurityTokenServiceOperator
+    [ServiceImplementationMarker]
+    public class AmazonSecurityTokenServiceOperator : IAmazonSecurityTokenServiceOperator, IServiceImplementation
     {
         public async Task<CallerIdentity> GetCallerIdentity(IAmazonSecurityTokenService sts)
         {
